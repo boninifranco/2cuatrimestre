@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var kiosco_1 = require("./kiosco");
+var item_1 = require("./item");
+var KioscoDePrueba = new kiosco_1.Kiosco();
+KioscoDePrueba.agregarItem(new item_1.Item("Chicles", 60, 10));
+KioscoDePrueba.agregarItem(new item_1.Item("Caramelos", 30, 50));
+KioscoDePrueba.agregarItem(new item_1.Item("Chocolate", 100, 15));
+KioscoDePrueba.verStockDisponible();
+KioscoDePrueba.nuevaVenta(new item_1.Item("Caramelos", 30, 5));
+KioscoDePrueba.nuevaVenta(new item_1.Item("Chicles", 60, 10));
+console.log("---------");
+KioscoDePrueba.historialDeVentas();

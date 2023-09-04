@@ -1,0 +1,29 @@
+Responder las preguntas en un TXT y subirlo
+a GitHub:
+
+• ¿Cuál es el beneficio de usar un lenguaje con tipos (Typescript)?
+
+- El beneficio de usar Typescript es que es un lenguaje de tipado estático. Esto permite que se declare el tipo de variable al crearlas y no se pueda modificar en todo el programa.
+La ventaja comparando con lenguajes de tipado dinámico es que probablemente pueda generar bugs usar este último al cambiar de tipo las variables.
+
+
+• ¿A qué se le llama variable interna? ¿Por qué internas?
+
+-Se llama variable interna a las variables que son creadas adentro de la clase utilizada. Se llaman internas porque ademas de ser creadas dentro de la clase, no se pueden acceder ni modificar por fuera de esta directamente.
+ 
+• Explicar la diferencia entre composición y herencia
+
+-La diferencia entre composición y herencia, es que la composición es un conjunto de clases simples que sirven para completar una clase más compleja. La herencia es una extensión de la clase padre. Es decir, la clase hija va a heredar de la clase padre sus atributos, el constructor y funciones.
+Si teniendo una clase ya implementada, se quiere implementar una nueva: 
+*Si hay cosas en común se usa herencia.
+*Si no se requiere tener acceso a las variables se usa composición.
+ 
+• Enumerar las características de una interfaz
+
+-Las interfaces pueden verse como “contratos” que las clases deben cumplir
+* En caso de no cumplirlo typescript no compila.
+* Los métodos que define la interfaz, deben ser implementados en la clase que la implementa.
+Restricciones de las Interfaces
+* No permite implementar los métodos.
+* No permite modificadores de acceso, todo lo que se plantee es public.
+* Si bien las interfaces permiten definir variables, no es recomendables porque quedan de forma public.
